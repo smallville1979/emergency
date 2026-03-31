@@ -86,7 +86,7 @@ body{background:#000;color:#fff;font-family:'Nunito',sans-serif;min-height:100vh
 .credit-section{background:#111;padding:40px 20px;}
 .credit-section h2{font-family:'Bebas Neue',cursive;font-size:clamp(28px,7vw,52px);color:#CE93D8;text-align:center;margin-bottom:8px;}
 .credit-sub{text-align:center;color:rgba(255,255,255,0.4);font-size:14px;margin-bottom:24px;font-style:italic;}
-.credit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmin(240px,1fr));gap:14px;max-width:900px;margin:0 auto;}
+.credit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;max-width:900px;margin:0 auto;}
 .c-card{background:#0a0a0a;border:1px solid #2a2a2a;border-radius:12px;padding:20px;transition:border-color 0.2s;}
 .c-card:hover{border-color:#555;}
 .c-card .label{font-family:'Bebas Neue',cursive;font-size:28px;line-height:1;margin-bottom:6px;}
@@ -363,12 +363,36 @@ body{background:#000;color:#fff;font-family:'Nunito',sans-serif;min-height:100vh
   <p style="font-family:'Bebas Neue',cursive;font-size:18px;color:rgba(255,255,255,0.3);">troll us. thank us. whatever. <a href="mailto:tomthevampireslayer@gmail.com" style="color:#FFD600;">tomthevampireslayer@gmail.com</a></p>
 </div>
 
-<!-- OPTIONAL EMAIL CAPTURE (BOTTOM OF PAGE) -->
-<div style="background:#111;padding:40px 20px;text-align:center;border-top:2px solid #333;">
-  <h3 style="font-family:'Bebas Neue',cursive;font-size:28px;color:#FFD600;margin-bottom:10px;">WANT THE FULL LIST?</h3>
-  <p style="color:rgba(255,255,255,0.5);font-size:14px;margin-bottom:20px;">All free money resources sent to ya email. No spam. Just saves.</p>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSdmw9jN8sbPHyrUDEXZgU8EetQ2GlA8fie3-yd2KElcBp_Q/viewform?embedded=true" width="100%" height="400" frameborder="0" style="max-width:640px;margin:0 auto;display:block;border:1px solid #333;border-radius:8px;"></iframe>
-</div>
+<!-- EMAIL CAPTURE (CLAUDE'S VERSION) -->
+<section id="get-the-kit" style="background:#111;border:2px solid #f5c842;border-radius:6px;padding:32px 24px;margin:40px auto;max-width:520px;font-family:sans-serif;">
+  <h2 style="color:#f5c842;margin:0 0 8px;font-size:22px;">Get the 2am Crisis Kit — Free</h2>
+  <p style="color:#ccc;margin:0 0 20px;font-size:15px;">Real UK bonuses you can claim today. No loans. No bullshit.</p>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" id="crisis-form">
+    <input type="hidden" name="_subject" value="New crisis kit signup" />
+    <input type="text" name="name" placeholder="First name" required style="display:block;width:100%;padding:12px;margin-bottom:10px;background:#1a1a1a;border:1px solid #333;color:#fff;border-radius:4px;font-size:15px;box-sizing:border-box;" />
+    <input type="email" name="email" placeholder="Your email" required style="display:block;width:100%;padding:12px;margin-bottom:14px;background:#1a1a1a;border:1px solid #333;color:#fff;border-radius:4px;font-size:15px;box-sizing:border-box;" />
+    <button type="submit" style="width:100%;padding:14px;background:#f5c842;color:#000;border:none;border-radius:4px;font-size:16px;font-weight:700;cursor:pointer;letter-spacing:1px;">SEND ME THE KIT</button>
+  </form>
+
+  <p id="form-thanks" style="display:none;color:#4ade80;margin-top:16px;text-align:center;font-size:15px;">✅ On its way. Check your email in 2 mins.</p>
+
+  <script>
+    document.getElementById('crisis-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(r) {
+        if (r.ok) {
+          document.getElementById('crisis-form').style.display = 'none';
+          document.getElementById('form-thanks').style.display = 'block';
+        }
+      });
+    });
+  </script>
+</section>
 
 <script>
 function triage(status) {
