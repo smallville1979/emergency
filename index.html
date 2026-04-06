@@ -94,6 +94,47 @@ body{background:#000;color:#fff;font-family:'Nunito',sans-serif;min-height:100vh
 .c-card p{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.5;margin-bottom:8px;}
 .c-card a{font-size:13px;font-weight:900;text-decoration:none;}
 .c-card .warning{font-size:11px;color:rgba(255,100,100,0.7);margin-top:6px;font-style:italic;}
+
+/* PAYPAL TRICK SECTION */
+.paypal-trick-section{background:#0a0a0a;padding:60px 20px;}
+.trick-wrapper{max-width:680px;margin:0 auto;}
+.slow-read-bar{background:#111;border-left:4px solid #FF1744;border-radius:0 10px 10px 0;padding:18px 20px;margin:32px 0;display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;}
+.slow-read-mid{border-left-color:#FF9800;}
+.slow-read-bottom{border-left-color:#00BCD4;}
+.slow-read-icon{font-size:28px;flex-shrink:0;}
+.slow-read-text{flex:1;min-width:200px;}
+.slow-read-text strong{display:block;font-size:18px;color:#fff;margin-bottom:4px;}
+.slow-read-text p{font-size:14px;color:rgba(255,255,255,0.7);margin:0;}
+.save-btn-inline{background:#FF1744;color:#fff;border:none;padding:10px 18px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:900;white-space:nowrap;align-self:center;}
+.trick-tag{background:#FF1744;color:#fff;font-size:11px;font-weight:900;padding:4px 10px;border-radius:4px;letter-spacing:2px;text-transform:uppercase;}
+.trick-title{font-family:'Bebas Neue',cursive;font-size:clamp(36px,8vw,64px);line-height:1;color:#fff;margin:16px 0 8px;}
+.trick-sub{font-size:16px;color:rgba(255,255,255,0.7);margin-bottom:32px;line-height:1.6;}
+.trick-steps{margin:32px 0;}
+.trick-step{display:flex;gap:16px;margin-bottom:24px;background:#111;border-radius:10px;padding:20px;}
+.step-num{background:#FF1744;color:#fff;font-family:'Bebas Neue',cursive;font-size:24px;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.step-body strong{display:block;font-size:16px;color:#fff;margin-bottom:6px;}
+.step-body p{font-size:14px;color:rgba(255,255,255,0.7);margin:0;line-height:1.6;}
+.trick-warnings{margin:32px 0;display:flex;flex-direction:column;gap:12px;}
+.warn-box{padding:14px 18px;border-radius:8px;font-size:14px;line-height:1.6;}
+.warn-red{background:rgba(255,23,68,0.15);border:1px solid rgba(255,23,68,0.4);color:#fff;}
+.warn-yellow{background:rgba(255,152,0,0.15);border:1px solid rgba(255,152,0,0.4);color:#fff;}
+.warn-blue{background:rgba(0,188,212,0.15);border:1px solid rgba(0,188,212,0.4);color:#fff;}
+.trick-checklist{background:#111;border-radius:12px;padding:28px;margin:32px 0;}
+.checklist-title{font-size:20px;color:#fff;margin:0 0 6px;}
+.checklist-sub{font-size:13px;color:rgba(255,255,255,0.5);margin:0 0 16px;}
+.checklist-progress-bar{background:rgba(255,255,255,0.1);border-radius:100px;height:6px;margin-bottom:20px;overflow:hidden;}
+.checklist-progress-fill{height:100%;background:#4CAF50;border-radius:100px;width:0;transition:width 0.4s ease;}
+.checklist-items{display:flex;flex-direction:column;gap:12px;}
+.check-item{display:flex;align-items:flex-start;gap:10px;font-size:15px;color:rgba(255,255,255,0.85);cursor:pointer;line-height:1.5;}
+.check-item input{margin-top:3px;accent-color:#4CAF50;width:18px;height:18px;flex-shrink:0;}
+.checklist-complete{background:rgba(76,175,80,0.2);border:1px solid #4CAF50;border-radius:8px;padding:14px 18px;margin-top:16px;color:#4CAF50;font-weight:900;font-size:15px;}
+.save-options{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;width:100%;}
+.save-opt-btn{background:#222;color:#fff;border:1px solid #333;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:700;}
+.save-opt-btn:hover{background:#333;}
+.blog-link-box{background:#111;border-radius:10px;padding:24px;text-align:center;margin-top:32px;}
+.blog-link-box p{color:rgba(255,255,255,0.7);margin:0 0 14px;font-size:15px;}
+.blog-link-btn{background:#FF1744;color:#fff;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:900;font-size:16px;display:inline-block;}
+.blog-link-btn:hover{background:#d50000;}
 </style>
 </head>
 <body>
@@ -452,6 +493,138 @@ function calcLoan() {
 }
 </script>
 
+
+<!-- PAYPAL REVOLUT TRICK SECTION -->
+<section class="paypal-trick-section">
+  <!-- SLOW READ INTERRUPT 1 -->
+  <div class="slow-read-bar">
+    <span class="slow-read-icon">⛔</span>
+    <div class="slow-read-text">
+      <strong>Stop. Read This Properly.</strong>
+      <p>People who rush this mess it up. This takes 3 minutes to read. Save it first.</p>
+    </div>
+    <button class="save-btn-inline" onclick="bookmarkPrompt()">📌 Save This</button>
+  </div>
+
+  <div class="trick-wrapper">
+    <div class="trick-header">
+      <span class="trick-tag">💳 FREE MONEY TRICK</span>
+      <h2 class="trick-title">PayPal Credit → Revolut<br>Free Days Trick</h2>
+      <p class="trick-sub">Link your PayPal Credit to Revolut and get an instant interest-free float. Pay it back before the due date and it costs you nothing.</p>
+    </div>
+
+    <div class="trick-steps">
+      <div class="trick-step">
+        <span class="step-num">1</span>
+        <div class="step-body">
+          <strong>Get PayPal Credit approved</strong>
+          <p>If you don't already have it, apply inside PayPal. Takes 2 minutes. You need a PayPal account and a UK address. Most people get approved instantly.</p>
+        </div>
+      </div>
+      <div class="trick-step">
+        <span class="step-num">2</span>
+        <div class="step-body">
+          <strong>Add Revolut as your PayPal payout account</strong>
+          <p>Open Revolut → get your account number and sort code → go into PayPal → Wallet → Link a Bank Account → enter your Revolut details.</p>
+        </div>
+      </div>
+      <div class="trick-step">
+        <span class="step-num">3</span>
+        <div class="step-body">
+          <strong>Send money to yourself via PayPal Credit</strong>
+          <p>In PayPal, send money to a friend or family member using PayPal Credit as the funding source. They send it straight back. Now that money is in your PayPal balance.</p>
+        </div>
+      </div>
+      <div class="trick-step">
+        <span class="step-num">4</span>
+        <div class="step-body">
+          <strong>Withdraw to your Revolut</strong>
+          <p>Transfer your PayPal balance to your linked Revolut account. It arrives within 1–3 business days. Now you have cash to spend — on PayPal's tab.</p>
+        </div>
+      </div>
+      <div class="trick-step">
+        <span class="step-num">5</span>
+        <div class="step-body">
+          <strong>Pay it back before the due date</strong>
+          <p>Log into PayPal Credit and check your statement date. Pay the full amount back before then and you pay zero interest. This is your free float window.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WARNING BOXES -->
+    <div class="trick-warnings">
+      <div class="warn-box warn-red">⚠️ <strong>Late = fees.</strong> If you miss the repayment date, PayPal Credit charges interest. Set a phone reminder NOW before you do anything else.</div>
+      <div class="warn-box warn-yellow">📋 <strong>Minimum payments.</strong> Always check your minimum payment — missing it hits your credit file even if the full balance isn't due yet.</div>
+      <div class="warn-box warn-blue">💡 <strong>Existing balance?</strong> If you already owe on PayPal Credit, this trick adds to that balance. Only do this if you can afford to pay it all back.</div>
+    </div>
+
+    <!-- SLOW READ INTERRUPT 2 - mid page -->
+    <div class="slow-read-bar slow-read-mid">
+      <span class="slow-read-icon">👀</span>
+      <div class="slow-read-text">
+        <strong>Still with me? Good.</strong>
+        <p>Most people who mess this up didn't read the warnings above. You just did. You're already ahead.</p>
+      </div>
+    </div>
+
+    <!-- CHECKLIST -->
+    <div class="trick-checklist" id="trickChecklist">
+      <h3 class="checklist-title">✅ Before You Start — Tick Everything</h3>
+      <p class="checklist-sub">Don't skip this. It's short.</p>
+      <div class="checklist-progress-bar"><div class="checklist-progress-fill" id="checkProgress"></div></div>
+      <div class="checklist-items">
+        <label class="check-item"><input type="checkbox" onchange="updateProgress()"> I have an active PayPal Credit account (or I'm about to apply)</label>
+        <label class="check-item"><input type="checkbox" onchange="updateProgress()"> I have a Revolut account with my sort code and account number ready</label>
+        <label class="check-item"><input type="checkbox" onchange="updateProgress()"> I have set a phone reminder for my PayPal Credit repayment date</label>
+        <label class="check-item"><input type="checkbox" onchange="updateProgress()"> I understand I must pay the full amount back before the due date</label>
+        <label class="check-item"><input type="checkbox" onchange="updateProgress()"> I have saved or bookmarked this page</label>
+        <label class="check-item"><input type="checkbox" onchange="updateProgress()"> I have read all three warning boxes above</label>
+      </div>
+      <div class="checklist-complete" id="checkComplete" style="display:none">
+        <span>🟢 You're ready. Go do it. Come back if you get stuck.</span>
+      </div>
+    </div>
+
+    <!-- SLOW READ INTERRUPT 3 -->
+    <div class="slow-read-bar slow-read-bottom">
+      <span class="slow-read-icon">💾</span>
+      <div class="slow-read-text">
+        <strong>Save this page before you leave.</strong>
+        <p>You'll want to refer back to the steps. Phone: screenshot it. Desktop: Ctrl+D to bookmark.</p>
+      </div>
+      <div class="save-options">
+        <button class="save-opt-btn" onclick="bookmarkPrompt()">🔖 Bookmark</button>
+        <button class="save-opt-btn" onclick="shareWhatsApp()">📲 WhatsApp</button>
+        <button class="save-opt-btn" onclick="screenshotReminder()">📸 Screenshot</button>
+      </div>
+    </div>
+
+    <!-- BLOG LINK -->
+    <div class="blog-link-box">
+      <p>Want the full breakdown with every edge case, fee table, and what to do if PayPal rejects you?</p>
+      <a href="#" class="blog-link-btn">📖 Read the Full Guide →</a>
+    </div>
+  </div>
+</section>
 <script src="https://smallville1979.github.io/kit/kit.js"></script>
-</body>
+
+<script>
+function updateProgress(){
+  const boxes=document.querySelectorAll('#trickChecklist input[type=checkbox]');
+  const checked=[...boxes].filter(b=>b.checked).length;
+  const pct=Math.round((checked/boxes.length)*100);
+  document.getElementById('checkProgress').style.width=pct+'%';
+  if(checked===boxes.length){document.getElementById('checkComplete').style.display='block';}
+  else{document.getElementById('checkComplete').style.display='none';}
+}
+function bookmarkPrompt(){
+  alert('Press Ctrl+D (or Cmd+D on Mac) to bookmark this page. On mobile, tap the share icon then Save to bookmarks.');
+}
+function shareWhatsApp(){
+  window.open('https://wa.me/?text=Emergency+money+help+%E2%80%94+PayPal+Revolut+trick+%26+more%3A+'+encodeURIComponent(window.location.href),'_blank');
+}
+function screenshotReminder(){
+  alert('On iPhone: press Side button + Volume Up. On Android: press Power + Volume Down. Screenshot the steps section so you have them offline.');
+}
+</script></body>
 </html>
