@@ -25,22 +25,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@900&display=swap');
 *{margin:0;padding:0;box-sizing:border-box;}
 body{background:#000;color:#fff;font-family:'Nunito',sans-serif;min-height:100vh;}
-  <div class="step">
-  <h3>UC ADVANCE PAYMENT — GET PAID NOW</h3>
-  <p>On Universal Credit and waiting for your first payment? You can get an advance of your full first payment immediately. Log into your UC account and request an advance, or tell your work coach at your first appointment.</p>
-  <a href="https://www.gov.uk/universal-credit/get-an-advance-first-payment">Request UC advance →</a>
-<!-- SBS_FP_UC_ADVANCE_EMERGENCY -->
-<div class="step">
-<h3>UC ADVANCE PAYMENT — GET PAID NOW</h3>
-<p>On Universal Credit and waiting for your first payment? You can get an advance of your full first payment immediately. Log into your UC account and request an advance, or tell your work coach at your first appointment.</p>
-<a href="https://www.gov.uk/universal-credit/get-an-advance-first-payment">Request UC advance →</a>
-<p>Paid back slowly over 24 months. Zero interest. You are entitled to this.</p>
-</div>
-
-  <p>Paid back slowly over 24 months. Zero interest. You are entitled to this.</p>
-</div>
-
-Save and commit "Add UC advance payment block to emergency £0 section".
 
 /* TRIAGE GATE */
 .gate{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;background:#000;}
@@ -98,7 +82,7 @@ Save and commit "Add UC advance payment block to emergency £0 section".
 .h-card p{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.5;margin-bottom:8px;}
 .h-card a{color:#4FC3F7;font-size:13px;font-weight:900;text-decoration:none;}
 
-/* ZILCH/CREDIT INFO */
+/* CREDIT SECTION */
 .credit-section{background:#111;padding:40px 20px;}
 .credit-section h2{font-family:'Bebas Neue',cursive;font-size:clamp(28px,7vw,52px);color:#CE93D8;text-align:center;margin-bottom:8px;}
 .credit-sub{text-align:center;color:rgba(255,255,255,0.4);font-size:14px;margin-bottom:24px;font-style:italic;}
@@ -111,7 +95,7 @@ Save and commit "Add UC advance payment block to emergency £0 section".
 .c-card a{font-size:13px;font-weight:900;text-decoration:none;}
 .c-card .warning{font-size:11px;color:rgba(255,100,100,0.7);margin-top:6px;font-style:italic;}
 
-/* PAYPAL TRICK SECTION */
+/* PAYPAL TRICK */
 .paypal-trick-section{background:#0a0a0a;padding:60px 20px;}
 .trick-wrapper{max-width:680px;margin:0 auto;}
 .slow-read-bar{background:#111;border-left:4px solid #FF1744;border-radius:0 10px 10px 0;padding:18px 20px;margin:32px 0;display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;}
@@ -151,6 +135,12 @@ Save and commit "Add UC advance payment block to emergency £0 section".
 .blog-link-box p{color:rgba(255,255,255,0.7);margin:0 0 14px;font-size:15px;}
 .blog-link-btn{background:#FF1744;color:#fff;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:900;font-size:16px;display:inline-block;}
 .blog-link-btn:hover{background:#d50000;}
+
+/* EXTRA BLOCKS */
+.step{background:#111;border-radius:12px;padding:24px;margin:16px auto;max-width:680px;}
+.step h3{font-family:'Bebas Neue',cursive;font-size:24px;color:#FFD600;margin-bottom:10px;}
+.step p{font-size:14px;color:rgba(255,255,255,0.7);line-height:1.6;margin-bottom:8px;}
+.step a{color:#FFD600;font-weight:900;font-size:14px;}
 </style>
 </head>
 <body>
@@ -176,17 +166,14 @@ Save and commit "Add UC advance payment block to emergency £0 section".
   </div>
   <button class="save-btn-inline" onclick="bookmarkPrompt()">📌 Save This</button>
 </div>
-
   <h2 style="color:#FF1744;">RIGHT NOW.<br>FREE. TODAY. 💀</h2>
   <div class="action-cards">
-
     <div class="action" style="background:#1a0000;border-color:rgba(255,23,68,0.3);">
       <div class="num" style="color:#FF1744;">1</div>
       <h3>FREE FOOD — RIGHT NOW</h3>
       <p>Download Olio. Free food from neighbours within walking distance. Zero cost. No forms. Just open it.</p>
       <a href="https://olioapp.com" target="_blank" style="color:#FF1744;">GET FREE FOOD ON OLIO →</a>
     </div>
-
     <div class="action" style="background:#1a0000;border-color:rgba(255,23,68,0.3);">
       <div class="num" style="color:#FF1744;">2</div>
       <h3>ELECTRIC RUNNING OUT?</h3>
@@ -194,20 +181,23 @@ Save and commit "Add UC advance payment block to emergency £0 section".
       <div class="say" style="border-color:#FF1744;color:#FF1744;">"I am on a prepayment meter and I need emergency credit please"</div>
       <p>They add it instantly. Pay back slow. Never go cold.</p>
     </div>
-
     <div class="action" style="background:#1a0000;border-color:rgba(255,23,68,0.3);">
       <div class="num" style="color:#FF1744;">3</div>
       <h3>FREE MONEY FROM YA COUNCIL</h3>
       <p>Ring ya local council right now. Ask for the <strong>Household Support Fund</strong>. It's a grant. Ya don't pay it back. They can also give travel vouchers for hospital/nursery runs.</p>
       <a href="https://www.gov.uk/cost-of-living" target="_blank" style="color:#FF1744;">Find ya council →</a>
     </div>
-
     <div class="action" style="background:#1a0000;border-color:rgba(255,23,68,0.3);">
       <div class="num" style="color:#FF1744;">4</div>
+      <h3>UC ADVANCE PAYMENT — GET PAID NOW</h3>
+      <p>On Universal Credit and waiting for your first payment? You can get an advance of your full first payment immediately. Log into your UC account and request an advance, or tell your work coach at your first appointment. Paid back slowly over 24 months. Zero interest. You are entitled to this.</p>
+      <a href="https://www.gov.uk/universal-credit/get-an-advance-first-payment" target="_blank" style="color:#FF1744;">Request UC advance →</a>
+    </div>
+    <div class="action" style="background:#1a0000;border-color:rgba(255,23,68,0.3);">
+      <div class="num" style="color:#FF1744;">5</div>
       <h3>FREE HELP. ONE CALL.</h3>
       <p>Citizens Advice. Free. <a href="tel:08001448848" style="color:#FF1744;font-weight:900;">0800 144 8848</a>. Tell them ya situation. They know every trick. On ya side. Always.</p>
     </div>
-
   </div>
   <button class="back-btn" onclick="goBack()">← BACK</button>
 </div>
@@ -222,17 +212,14 @@ Save and commit "Add UC advance payment block to emergency £0 section".
   </div>
   <button class="save-btn-inline" onclick="bookmarkPrompt()">📌 Save This</button>
 </div>
-
   <h2 style="color:#FFD600;">MAKE IT<br>STRETCH. 💰</h2>
   <div class="action-cards">
-
     <div class="action" style="background:#1a1500;border-color:rgba(255,214,0,0.3);">
       <div class="num" style="color:#FFD600;">1</div>
       <h3>TOO GOOD TO GO — £2.50</h3>
       <p>Magic bag from Greggs, Tesco, Costa. £10 of food for £2.50. Download the app and find one near ya right now.</p>
       <a href="https://www.toogoodtogo.com" target="_blank" style="color:#FFD600;">GET £10 FOOD FOR £2.50 →</a>
     </div>
-
     <div class="action" style="background:#1a1500;border-color:rgba(255,214,0,0.3);">
       <div class="num" style="color:#FFD600;">2</div>
       <h3>SIGNUP BONUSES — BOLT + OLA</h3>
@@ -241,21 +228,18 @@ Save and commit "Add UC advance payment block to emergency £0 section".
       <a href="https://olacabs.com" target="_blank" style="color:#FFD600;">Ola →</a> &nbsp;
       <a href="https://referrals.uber.com/refer?id=p9kkymrfx11k" target="_blank" style="color:#FFD600;">Uber 50% off →</a>
     </div>
-
     <div class="action" style="background:#1a1500;border-color:rgba(255,214,0,0.3);">
       <div class="num" style="color:#FFD600;">3</div>
       <h3>ZILCH — SPREAD THE COST</h3>
       <p>Zilch lets ya spread any purchase over 6 weeks interest free. No credit card needed. Good for food shops, travel, essentials.</p>
       <a href="https://zilch.com" target="_blank" style="color:#FFD600;">Get Zilch →</a>
     </div>
-
     <div class="action" style="background:#1a1500;border-color:rgba(255,214,0,0.3);">
       <div class="num" style="color:#FFD600;">4</div>
       <h3>CHECK WHAT YA OWED</h3>
       <p>If ya not already claiming everything — ya leaving money on the table every single week.</p>
       <a href="https://www.entitledto.co.uk" target="_blank" style="color:#FFD600;">Check at entitledto.co.uk →</a>
     </div>
-
   </div>
   <button class="back-btn" onclick="goBack()">← BACK</button>
 </div>
@@ -270,31 +254,26 @@ Save and commit "Add UC advance payment block to emergency £0 section".
   </div>
   <button class="save-btn-inline" onclick="bookmarkPrompt()">📌 Save This</button>
 </div>
-
   <h2 style="color:#00E676;">YA SORTED.<br>STAY SORTED. 💪</h2>
   <div class="action-cards">
-
     <div class="action" style="background:#001a08;border-color:rgba(0,230,118,0.3);">
       <div class="num" style="color:#00E676;">1</div>
       <h3>MAKE IT GO FURTHER</h3>
       <p>Aldi first. Yellow sticker aisle Sunday evenings. Batch cook. Never shop hungry. That £5 can last 2 days done right.</p>
       <a href="https://smallville1979.github.io/skintbutsorted" style="color:#00E676;">Full survival guide →</a>
     </div>
-
     <div class="action" style="background:#001a08;border-color:rgba(0,230,118,0.3);">
       <div class="num" style="color:#00E676;">2</div>
       <h3>FREE MONEY YA PROBABLY OWED</h3>
       <p>£19 billion in benefits goes unclaimed every year. Most people on low incomes are owed more than they think.</p>
       <a href="https://www.entitledto.co.uk" target="_blank" style="color:#00E676;">Check what ya owed →</a>
     </div>
-
     <div class="action" style="background:#001a08;border-color:rgba(0,230,118,0.3);">
       <div class="num" style="color:#00E676;">3</div>
       <h3>FREE BANK MONEY</h3>
       <p>Lloyds pays £200 to switch accounts. PayPal gives ya both £10. Revolut pays £70 referral. Stack them all.</p>
       <a href="https://smallville1979.github.io/free-banking-dollars" style="color:#00E676;">Get free bank money →</a>
     </div>
-
   </div>
   <button class="back-btn" onclick="goBack()">← BACK</button>
 </div>
@@ -431,113 +410,14 @@ Save and commit "Add UC advance payment block to emergency £0 section".
   </div>
 </div>
 
-<!-- CHAOS LOOP -->
-
-  <p style="font-family:'Bebas Neue',cursive;font-size:18px;color:rgba(255,255,255,0.3);">troll us. thank us. whatever. <a href="mailto:tomthevampireslayer@gmail.com" style="color:#FFD600;">tomthevampireslayer@gmail.com</a></p>
-</div>
-
-<!-- EMAIL CAPTURE (CLAUDE'S VERSION) -->
-<section id="get-the-kit" style="background:#111;border:2px solid #f5c842;border-radius:6px;padding:32px 24px;margin:40px auto;max-width:520px;font-family:sans-serif;">
-  <h2 style="color:#f5c842;margin:0 0 8px;font-size:22px;">Get the 2am Crisis Kit — Free</h2>
-  <p style="color:#ccc;margin:0 0 20px;font-size:15px;">Real UK bonuses you can claim today. No loans. No bullshit.</p>
-
-  <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" id="crisis-form">
-    <input type="hidden" name="_subject" value="New crisis kit signup" />
-    <input type="text" name="name" placeholder="First name" required style="display:block;width:100%;padding:12px;margin-bottom:10px;background:#1a1a1a;border:1px solid #333;color:#fff;border-radius:4px;font-size:15px;box-sizing:border-box;" />
-    <input type="email" name="email" placeholder="Your email" required style="display:block;width:100%;padding:12px;margin-bottom:14px;background:#1a1a1a;border:1px solid #333;color:#fff;border-radius:4px;font-size:15px;box-sizing:border-box;" />
-    <button type="submit" style="width:100%;padding:14px;background:#f5c842;color:#000;border:none;border-radius:4px;font-size:16px;font-weight:700;cursor:pointer;letter-spacing:1px;">SEND ME THE KIT</button>
-  </form>
-
-  <p id="form-thanks" style="display:none;color:#4ade80;margin-top:16px;text-align:center;font-size:15px;">✅ On its way. Check your email in 2 mins.</p>
-
-  <script>
-    document.getElementById('crisis-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      fetch(this.action, {
-        method: 'POST',
-        body: new FormData(this),
-        headers: { 'Accept': 'application/json' }
-      }).then(function(r) {
-        if (r.ok) {
-          document.getElementById('crisis-form').style.display = 'none';
-          document.getElementById('form-thanks').style.display = 'block';
-        }
-      });
-    });
-  </script>
-</section>
-
-<script>
-function triage(status) {
-  document.getElementById('gate').style.display = 'none';
-  document.querySelectorAll('.result').forEach(r => r.classList.remove('show'));
-  document.getElementById('result-' + status).classList.add('show');
-  window.scrollTo({top: 0, behavior: 'instant'});
-}
-
-function goBack() {
-  document.querySelectorAll('.result').forEach(r => r.classList.remove('show'));
-  document.getElementById('gate').style.display = 'flex';
-  window.scrollTo({top: 0, behavior: 'instant'});
-}
-
-function calcLoan() {
-  var amount = parseFloat(document.getElementById('loan-amount').value) || 0;
-  var rate = parseFloat(document.getElementById('loan-rate').value) || 0;
-  var weeks = parseFloat(document.getElementById('loan-weeks').value) || 1;
-  var interest = amount * (rate / 100) * (weeks / 52);
-  var payback = amount + interest;
-  var extra = interest;
-
-  document.getElementById('ln-borrow').textContent = '£' + amount.toFixed(0);
-  document.getElementById('ln-payback').textContent = '£' + payback.toFixed(0);
-  document.getElementById('ln-extra').textContent = '£' + extra.toFixed(0);
-
-  var verdict, advice, color;
-  if (rate >= 500) {
-    verdict = 'DEBT TRAP. RUN. 💀';
-    color = '#FF1744';
-    advice = 'That\'s a payday loan rate. Ya\'ll pay back £' + payback.toFixed(0) + ' for £' + amount.toFixed(0) + ' borrowed. Call Citizens Advice instead: 0800 144 8848. Free. Right now.';
-  } else if (rate >= 100) {
-    verdict = 'TAKING THE PISS. 😤';
-    color = '#FF4081';
-    advice = 'Whoever offered ya this is rinsing ya. Try ya credit union instead — findyourcreditunion.co.uk — much fairer rates.';
-  } else if (rate >= 30) {
-    verdict = 'EXPENSIVE. THINK TWICE.';
-    color = '#FFD600';
-    advice = 'Credit card rates. Only worth it if ya pay the full amount back before the interest kicks in. Otherwise it spirals.';
-  } else if (rate > 0) {
-    verdict = 'MANAGEABLE. JUST ABOUT.';
-    color = '#00E676';
-    advice = 'Low rate but ya still paying extra. Only borrow if there\'s genuinely no free alternative. Check entitledto.co.uk first.';
-  } else {
-    verdict = 'FREE MONEY! 🎉';
-    color = '#00E676';
-    advice = '0% interest. If someone\'s offering ya 0% — take it. Just make sure ya can pay it back on time.';
-  }
-
-  var res = document.getElementById('loan-result');
-  res.style.borderColor = color;
-  document.getElementById('loan-verdict').textContent = verdict;
-  document.getElementById('loan-verdict').style.color = color;
-  document.getElementById('loan-advice').textContent = advice;
-  res.classList.add('show');
-}
-</script>
-
-
 <!-- PAYPAL REVOLUT TRICK SECTION -->
 <section class="paypal-trick-section">
-  <!-- SLOW READ INTERRUPT 1 -->
-  
-
   <div class="trick-wrapper">
     <div class="trick-header">
       <span class="trick-tag">💳 FREE MONEY TRICK</span>
       <h2 class="trick-title">PayPal Credit → Revolut<br>Free Days Trick</h2>
       <p class="trick-sub">Link your PayPal Credit to Revolut and get an instant interest-free float. Pay it back before the due date and it costs you nothing.</p>
     </div>
-
     <div class="trick-steps">
       <div class="trick-step">
         <span class="step-num">1</span>
@@ -575,15 +455,11 @@ function calcLoan() {
         </div>
       </div>
     </div>
-
-    <!-- WARNING BOXES -->
     <div class="trick-warnings">
       <div class="warn-box warn-red">⚠️ <strong>Late = fees.</strong> If you miss the repayment date, PayPal Credit charges interest. Set a phone reminder NOW before you do anything else.</div>
       <div class="warn-box warn-yellow">📋 <strong>Minimum payments.</strong> Always check your minimum payment — missing it hits your credit file even if the full balance isn't due yet.</div>
       <div class="warn-box warn-blue">💡 <strong>Existing balance?</strong> If you already owe on PayPal Credit, this trick adds to that balance. Only do this if you can afford to pay it all back.</div>
     </div>
-
-    <!-- SLOW READ INTERRUPT 2 - mid page -->
     <div class="slow-read-bar slow-read-mid">
       <span class="slow-read-icon">👀</span>
       <div class="slow-read-text">
@@ -591,8 +467,6 @@ function calcLoan() {
         <p>Most people who mess this up didn't read the warnings above. You just did. You're already ahead.</p>
       </div>
     </div>
-
-    <!-- CHECKLIST -->
     <div class="trick-checklist" id="trickChecklist">
       <h3 class="checklist-title">✅ Before You Start — Tick Everything</h3>
       <p class="checklist-sub">Don't skip this. It's short.</p>
@@ -609,8 +483,6 @@ function calcLoan() {
         <span>🟢 You're ready. Go do it. Come back if you get stuck.</span>
       </div>
     </div>
-
-    <!-- SLOW READ INTERRUPT 3 -->
     <div class="slow-read-bar slow-read-bottom">
       <span class="slow-read-icon">💾</span>
       <div class="slow-read-text">
@@ -623,17 +495,113 @@ function calcLoan() {
         <button class="save-opt-btn" onclick="screenshotReminder()">📸 Screenshot</button>
       </div>
     </div>
-
-    <!-- BLOG LINK -->
     <div class="blog-link-box">
       <p>Want the full breakdown with every edge case, fee table, and what to do if PayPal rejects you?</p>
       <a href="#" class="blog-link-btn">📖 Read the Full Guide →</a>
     </div>
   </div>
 </section>
+
+<!-- BUDGETING LOAN -->
+<div class="step">
+  <h3>BUDGETING LOAN — INTEREST-FREE CASH FROM DWP</h3>
+  <p>On Income Support, Pension Credit, income-based JSA or income-related ESA for 6+ months? Get up to £812 interest-free, repaid from your benefits over 2 years. No credit check. On UC? Apply for a Budgeting Advance instead.</p>
+  <a href="https://www.gov.uk/budgeting-loan">Apply on GOV.UK →</a>
+</div>
+
+<!-- BREATHING SPACE -->
+<div class="step">
+  <h3>BREATHING SPACE — STOP DEBT COLLECTORS FOR 60 DAYS</h3>
+  <p>The Breathing Space scheme freezes interest, stops charges, and prevents creditors contacting you for 60 days. A free debt adviser applies on your behalf — no solicitor needed.</p>
+  <a href="https://www.gov.uk/guidance/debt-respite-breathing-space-scheme-creditors-responsibilities-to-debtors">Check Breathing Space on GOV.UK →</a>
+  <p>Apply free via StepChange: <a href="https://www.stepchange.org/debt-info/breathing-space.aspx">stepchange.org</a></p>
+</div>
+
+<!-- EMAIL CAPTURE -->
+<section id="get-the-kit" style="background:#111;border:2px solid #f5c842;border-radius:6px;padding:32px 24px;margin:40px auto;max-width:520px;font-family:sans-serif;">
+  <h2 style="color:#f5c842;margin:0 0 8px;font-size:22px;">Get the 2am Crisis Kit — Free</h2>
+  <p style="color:#ccc;margin:0 0 20px;font-size:15px;">Real UK bonuses you can claim today. No loans. No bullshit.</p>
+  <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" id="crisis-form">
+    <input type="hidden" name="_subject" value="New crisis kit signup" />
+    <input type="text" name="name" placeholder="First name" required style="display:block;width:100%;padding:12px;margin-bottom:10px;background:#1a1a1a;border:1px solid #333;color:#fff;border-radius:4px;font-size:15px;box-sizing:border-box;" />
+    <input type="email" name="email" placeholder="Your email" required style="display:block;width:100%;padding:12px;margin-bottom:14px;background:#1a1a1a;border:1px solid #333;color:#fff;border-radius:4px;font-size:15px;box-sizing:border-box;" />
+    <button type="submit" style="width:100%;padding:14px;background:#f5c842;color:#000;border:none;border-radius:4px;font-size:16px;font-weight:700;cursor:pointer;letter-spacing:1px;">SEND ME THE KIT</button>
+  </form>
+  <p id="form-thanks" style="display:none;color:#4ade80;margin-top:16px;text-align:center;font-size:15px;">✅ On its way. Check your email in 2 mins.</p>
+  <script>
+    document.getElementById('crisis-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(r) {
+        if (r.ok) {
+          document.getElementById('crisis-form').style.display = 'none';
+          document.getElementById('form-thanks').style.display = 'block';
+        }
+      });
+    });
+  </script>
+</section>
+
+<div style="text-align:center;padding:40px 20px;">
+  <p style="font-family:'Bebas Neue',cursive;font-size:18px;color:rgba(255,255,255,0.3);">troll us. thank us. whatever. <a href="mailto:tomthevampireslayer@gmail.com" style="color:#FFD600;">tomthevampireslayer@gmail.com</a></p>
+</div>
+
 <script src="https://smallville1979.github.io/kit/kit.js"></script>
 
 <script>
+function triage(status) {
+  document.getElementById('gate').style.display = 'none';
+  document.querySelectorAll('.result').forEach(r => r.classList.remove('show'));
+  document.getElementById('result-' + status).classList.add('show');
+  window.scrollTo({top: 0, behavior: 'instant'});
+}
+function goBack() {
+  document.querySelectorAll('.result').forEach(r => r.classList.remove('show'));
+  document.getElementById('gate').style.display = 'flex';
+  window.scrollTo({top: 0, behavior: 'instant'});
+}
+function calcLoan() {
+  var amount = parseFloat(document.getElementById('loan-amount').value) || 0;
+  var rate = parseFloat(document.getElementById('loan-rate').value) || 0;
+  var weeks = parseFloat(document.getElementById('loan-weeks').value) || 1;
+  var interest = amount * (rate / 100) * (weeks / 52);
+  var payback = amount + interest;
+  var extra = interest;
+  document.getElementById('ln-borrow').textContent = '£' + amount.toFixed(0);
+  document.getElementById('ln-payback').textContent = '£' + payback.toFixed(0);
+  document.getElementById('ln-extra').textContent = '£' + extra.toFixed(0);
+  var verdict, advice, color;
+  if (rate >= 500) {
+    verdict = 'DEBT TRAP. RUN. 💀';
+    color = '#FF1744';
+    advice = 'That\'s a payday loan rate. Ya\'ll pay back £' + payback.toFixed(0) + ' for £' + amount.toFixed(0) + ' borrowed. Call Citizens Advice instead: 0800 144 8848. Free. Right now.';
+  } else if (rate >= 100) {
+    verdict = 'TAKING THE PISS. 😤';
+    color = '#FF4081';
+    advice = 'Whoever offered ya this is rinsing ya. Try ya credit union instead — findyourcreditunion.co.uk — much fairer rates.';
+  } else if (rate >= 30) {
+    verdict = 'EXPENSIVE. THINK TWICE.';
+    color = '#FFD600';
+    advice = 'Credit card rates. Only worth it if ya pay the full amount back before the interest kicks in. Otherwise it spirals.';
+  } else if (rate > 0) {
+    verdict = 'MANAGEABLE. JUST ABOUT.';
+    color = '#00E676';
+    advice = 'Low rate but ya still paying extra. Only borrow if there\'s genuinely no free alternative. Check entitledto.co.uk first.';
+  } else {
+    verdict = 'FREE MONEY! 🎉';
+    color = '#00E676';
+    advice = '0% interest. If someone\'s offering ya 0% — take it. Just make sure ya can pay it back on time.';
+  }
+  var res = document.getElementById('loan-result');
+  res.style.borderColor = color;
+  document.getElementById('loan-verdict').textContent = verdict;
+  document.getElementById('loan-verdict').style.color = color;
+  document.getElementById('loan-advice').textContent = advice;
+  res.classList.add('show');
+}
 function updateProgress(){
   const boxes=document.querySelectorAll('#trickChecklist input[type=checkbox]');
   const checked=[...boxes].filter(b=>b.checked).length;
@@ -652,35 +620,5 @@ function screenshotReminder(){
   alert('On iPhone: press Side button + Volume Up. On Android: press Power + Volume Down. Screenshot the steps section so you have them offline.');
 }
 </script>
-<!-- SBS_FP_BUDGETING_LOAN_BLOCK -->
-<div class="step">
-<h3>BUDGETING LOAN — INTEREST-FREE CASH FROM DWP</h3>
-<p>If you've been on Income Support, Pension Credit, income-based JSA or income-related ESA for 6+ months, you can apply for a Budgeting Loan of up to £812 (more if you have children). Zero interest. Repaid from your benefits over 2 years. No credit check.</p>
-<a href="https://www.gov.uk/budgeting-loan">Apply for a Budgeting Loan on GOV.UK →</a>
-<p>On Universal Credit? You want a Budgeting Advance instead — same idea, same link above explains both.</p>
-</div>
-
-
-<!-- SBS_FP_BREATHING_SPACE_BLOCK -->
-<div class="step">
-<h3>BREATHING SPACE — STOP DEBT COLLECTORS FOR 60 DAYS</h3>
-<p>The Breathing Space scheme (Debt Respite Scheme) gives you 60 days where interest freezes, charges stop, and creditors cannot contact you or take action. A debt adviser applies on your behalf — it's free and you don't need a solicitor.</p>
-<a href="https://www.gov.uk/guidance/debt-respite-breathing-space-scheme-creditors-responsibilities-to-debtors">Check Breathing Space on GOV.UK →</a>
-<p>Apply via StepChange (free): <a href="https://www.stepchange.org/debt-info/breathing-space.aspx">stepchange.org</a></p>
-</div>
-
-
-<div class="step">
-  <h3>BREATHING SPACE — STOP DEBT COLLECTORS FOR 60 DAYS</h3>
-  <p>The Breathing Space scheme freezes interest, stops charges, and prevents creditors contacting you for 60 days. A free debt adviser applies on your behalf — no solicitor needed.</p>
-  <a href="https://www.gov.uk/guidance/debt-respite-breathing-space-scheme-creditors-responsibilities-to-debtors">Check Breathing Space on GOV.UK →</a>
-  <p>Apply free via StepChange: <a href="https://www.stepchange.org/debt-info/breathing-space.aspx">stepchange.org</a></p>
-</div>
-
-<div class="step">
-  <h3>BUDGETING LOAN — INTEREST-FREE CASH FROM DWP</h3>
-  <p>On Income Support, Pension Credit, income-based JSA or income-related ESA for 6+ months? Get up to £812 interest-free, repaid from your benefits over 2 years. No credit check. On UC? Apply for a Budgeting Advance instead.</p>
-  <a href="https://www.gov.uk/budgeting-loan">Apply on GOV.UK →</a>
-</div>
 </body>
 </html>
