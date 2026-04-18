@@ -146,6 +146,17 @@ body{background:#000;color:#fff;font-family:'Nunito',sans-serif;min-height:100vh
 <body>
 
 
+<!-- TRIAGE GATE -->
+<div class="gate" id="gate">
+  <h1 style="color:#FF1744;">HOW MUCH<br>YA GOT?</h1>
+  <p>one question. instant answer.<br>no bullshit. no reading.</p>
+  <div class="triage-btns">
+    <button class="triage-btn btn-zero" onclick="triage('zero')">💀 £0 — NOTHING</button>
+    <button class="triage-btn btn-low" onclick="triage('low')">😬 UNDER A FIVER</button>
+    <button class="triage-btn btn-ok" onclick="triage('ok')">🤏 £5 OR MORE</button>
+  </div>
+</div>
+
 <!-- ASK GEMINI SECTION -->
 <div style="background:#0a1628;border:3px solid #FFD600;border-radius:12px;padding:28px 22px;max-width:680px;margin:20px auto 30px;font-family:sans-serif;">
   <div style="font-size:0.75rem;color:#FFD600;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">&#x1F4A1; BEFORE ANYTHING ELSE</div>
@@ -177,17 +188,6 @@ body{background:#000;color:#fff;font-family:'Nunito',sans-serif;min-height:100vh
     <a href="https://chat.openai.com" target="_blank" rel="noopener" style="background:#333;color:#fff;text-decoration:none;padding:12px 20px;border-radius:6px;font-weight:900;font-size:0.95rem;flex:1;text-align:center;min-width:140px;">ChatGPT works too &#x2192;</a>
   </div>
   <p style="color:#666;font-size:0.78rem;margin-top:12px;margin-bottom:0;">Both free. Both work on any phone. Just copy the prompt above, paste it in, add your town. Job done.</p>
-</div>
-
-<!-- TRIAGE GATE -->
-<div class="gate" id="gate">
-  <h1 style="color:#FF1744;">HOW MUCH<br>YA GOT?</h1>
-  <p>one question. instant answer.<br>no bullshit. no reading.</p>
-  <div class="triage-btns">
-    <button class="triage-btn btn-zero" onclick="triage('zero')">💀 £0 — NOTHING</button>
-    <button class="triage-btn btn-low" onclick="triage('low')">😬 UNDER A FIVER</button>
-    <button class="triage-btn btn-ok" onclick="triage('ok')">🤏 £5 OR MORE</button>
-  </div>
 </div>
 
 <!-- RESULT: £0 -->
